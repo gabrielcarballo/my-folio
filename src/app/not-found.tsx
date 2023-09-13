@@ -4,8 +4,8 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: '404 - Page not found',
   description: 'Page does not exist',
-}
 
+}
 
 
 export default function NotFound(){
@@ -15,4 +15,4 @@ export default function NotFound(){
     <Link href="/" prefetch={true}>Go to Home</Link>
     </>
   )
-}
+} 
