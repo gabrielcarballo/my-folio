@@ -1,9 +1,10 @@
 import Head from "next/head"
 import { Metadata } from "next"
 import SimpleAbout from "./_components/commons/SimpleAbout"
+import Header from "./_components/commons/Header"
 
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'My Folio Home',
   description: 'My Portfolio Home Page',
 }
@@ -12,8 +13,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-    <h1>Hello World with Next.js!</h1>
-    <SimpleAbout />
+    <main>
+      <h1>Hello World with Next.js!</h1>
+      <Header />
+      <SimpleAbout />
+    </main>
+    <footer>
+    </footer>
     </>
   )
 }

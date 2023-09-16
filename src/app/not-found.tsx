@@ -1,5 +1,9 @@
 import Link from "next/link"
 import { Metadata } from "next"
+import Head from "next/head"
+import Header from "./_components/commons/Header"
+
+
 
 export const metadata: Metadata = {
   title: '404 - Page not found',
@@ -10,9 +14,11 @@ export const metadata: Metadata = {
 
 export default function NotFound(){
   return (
-    <>
-    <h1>Whoops, seems like you are on a page that does not exist</h1>
-    <Link href="/" prefetch={true}>Go to Home</Link>
-    </>
+    <html lang="en">
+      <main>
+        <Header />
+      </main>
+      <body></body>
+    </html>
   )
 } 
