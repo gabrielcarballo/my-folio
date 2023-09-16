@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: 'My Folio Home',
   description: 'My Portfolio Home Page',
   icons: {
-    icon: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/favicon-m.png',
+
 
   }
 }
