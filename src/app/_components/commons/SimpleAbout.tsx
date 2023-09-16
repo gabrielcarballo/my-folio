@@ -118,9 +118,9 @@ export default function SimpleAbout() {
           <h2>My Tech Stack</h2>
         <div className='techstack-container' style={{display: "flex", flexWrap: "wrap", flexDirection: "row", backgroundColor: "red", width: "10em", height: "25em", overflow: ''}}>
           <ul style={{ display: "flex", flexFlow: "row wrap", backgroundColor: 'pink'}}>
-            { techStack.map((tech) => {
+            { techStack.map((tech, index) => {
               return (
-                <li>
+                <li key={index}>
                   <img src={tech.icon} alt={tech.name} width="40" height="40"/>
                 </li>
               )
