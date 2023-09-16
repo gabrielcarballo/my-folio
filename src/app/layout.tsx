@@ -7,8 +7,7 @@ import React from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'My Folio Home',
-  description: 'My Portfolio Home Page',
+  description: 'Gabriel Carballo Portfolio',
   icons: {
     icon: '/favicon-m.png',
 
