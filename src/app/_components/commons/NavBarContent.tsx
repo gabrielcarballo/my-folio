@@ -5,7 +5,7 @@ export default function NavigationBarContent() {
     <>
       <div className="flex">
         <img src="favicon-32x32.png" alt="Gabriel logo" />
-        <span className="self-center">Gabriel Carballo</span>
+        <Link className="self-center" href="/">Gabriel Carballo</Link>
       </div>
       <div className="flex justify-between space-x-2">
         <Link href="/about" prefetch={true} >
