@@ -1,6 +1,7 @@
-import Head from "next/head"
 import { Metadata } from "next"
 import ContactBox from './components/commons/contact';
+import Header from '../_components/commons/Header';
+
 
 const contactBoxes = [
   {
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
 export default function Contacts() {
   return (
     <>
+    <Header />
     <h1>You can contact me at</h1>
     <ul>
       { contactBoxes.map((contactBox) => {

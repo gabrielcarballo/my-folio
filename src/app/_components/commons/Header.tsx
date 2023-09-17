@@ -1,15 +1,14 @@
-import Head from "next/head";
-import Link from "next/link";
 import React from "react";
 import { ReactNode } from "react";
+import NavBarContent from "./NavBarContent";
 
 
 const Header = (): ReactNode => {
   return (
   <>
-        <nav>
-          
-        </nav>
+    <nav className="bg-neutral-900 mb-10">
+      <NavBarContent />
+    </nav>
   </>
 )
   }

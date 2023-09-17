@@ -14,11 +14,9 @@ export const metadata: Metadata = {
 
 export default function NotFound(){
   return (
-    <html lang="en">
-      <main>
-        <Header />
-      </main>
-      <body></body>
-    </html>
+    <>
+    <Header />
+    Página Não Encontrada    
+    </>
   )
 } 

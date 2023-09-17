@@ -1,7 +1,9 @@
+import Header from "../_components/commons/Header"
+
 export default function AboutPage() {
   return (
     <>
-      <h1>{"Hello, I'm Gabriel"}</h1>
+      <Header />
       <p>I am a web developer</p>
     </>
   )

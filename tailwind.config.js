@@ -5,6 +5,18 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        'aquamarine': '#1c4357',
+        'lightblue': '#bfcfff',
+        'darkblue': '#28617e',
+        'darkerblue': '#102530',
+        'whiteclear': '#f2f5ff',
+        'skyblue': '#8ca9ff',
+      },
+    }
+  },
   plugins: [],
 }
+
