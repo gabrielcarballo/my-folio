@@ -110,9 +110,10 @@ export default function SimpleAbout() {
         <h1>Hello, I'm &nbsp;</h1>
         <span>Gabriel</span>
         <div>
-          <h2>I am a passionate full-stack developer about disruptive interfaces, tackling complex problems,
+          {/* <h2>I am a passionate full-stack developer about disruptive interfaces, tackling complex problems,
              and the impact that technology has on humanity, especially in the healthcare field
-          </h2>
+          </h2> */}
+          <p>Simple About text</p>
           <Link href="/contacts">Contact Me!</Link>
         </div>
           <h2>My Tech Stack</h2>

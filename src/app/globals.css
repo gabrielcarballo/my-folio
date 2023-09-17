@@ -3,8 +3,25 @@
 @tailwind utilities;
 
 html, body {
-  background-color: #2a325a;
+  background-color: #102530;
   color: white;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+main {
+  width: 70%;
+}
+
+main > * {
+  margin-left: 5rem;
 }
 
 /* .logo-pallete {
