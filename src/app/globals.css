@@ -25,10 +25,6 @@ nav {
 }
 
 main {
-  width: 70%;
-}
-
-main > * {
-  margin-left: 5rem;
+  width: 60%;
 }
 
