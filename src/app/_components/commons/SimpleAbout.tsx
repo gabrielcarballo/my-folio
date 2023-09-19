@@ -1,5 +1,7 @@
+'use client'
 import Link from "next/link"
 import React from "react";
+import TypeWritter, { ITypewriterProps } from 'react-ts-typewriter'
 
 const techStack = [
   {
@@ -104,30 +106,42 @@ const techStack = [
   },
 ];
 
+const typewriterProps: ITypewriterProps = {
+  text: ['Gabriel Carballo', 'Developer', 'Researcher', 'Eternal Student', 'Lawyer', 'Entrepreneur', 'Gamer', 'Code Passionate'],
+  speed: 40,
+  loop: true,
+  delay: 4000,
+  cursor: true,
+}
+
 export default function SimpleAbout() {
   return (
+    <div>
+      <h1 className="font">Hello, I'm &nbsp;</h1>
+      <span>
+        <TypeWritter {...typewriterProps} />
+      </span>
       <div>
-        <h1>Hello, I'm &nbsp;</h1>
-        <span>Gabriel</span>
-        <div>
-          {/* <h2>I am a passionate full-stack developer about disruptive interfaces, tackling complex problems,
-             and the impact that technology has on humanity, especially in the healthcare field
-          </h2> */}
-          <p>Simple About text</p>
-          <Link href="/contacts">Contact Me!</Link>
-        </div>
-          <h2>My Tech Stack</h2>
-        <div className='techstack-container' style={{display: "flex", flexWrap: "wrap", flexDirection: "row", backgroundColor: "red", width: "10em", height: "25em", overflow: ''}}>
-          <ul style={{ display: "flex", flexFlow: "row wrap", backgroundColor: 'pink'}}>
-            { techStack.map((tech, index) => {
-              return (
-                <li key={index}>
-                  <img src={tech.icon} alt={tech.name} width="40" height="40"/>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
+        <h2 className="italic">
+          Passionate full-stack developer with a keen interest in crafting disruptive interfaces,
+          solving complex problems, and understanding the profound impact technology has on humanity,
+          particularly within the healthcare field.
+        </h2>
+        <p>Simple About text</p>
+        <Link href="/contacts">Contact Me!</Link>
       </div>
+      <h2>My Tech Stack</h2>
+      <div className='techstack-container' style={{ display: "flex", flexWrap: "wrap", flexDirection: "row", backgroundColor: "red", width: "10em", height: "25em", overflow: '' }}>
+        <ul style={{ display: "flex", flexFlow: "row wrap", backgroundColor: 'pink' }}>
+          {techStack.map((tech, index) => {
+            return (
+              <li key={index}>
+                <img src={tech.icon} alt={tech.name} width="40" height="40" />
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </div>
   )
 }
