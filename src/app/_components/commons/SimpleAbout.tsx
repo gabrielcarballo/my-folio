@@ -106,7 +106,6 @@ const techStack = [
 
 export default function SimpleAbout() {
   return (
-    <main>
       <div>
         <h1>Hello, I'm &nbsp;</h1>
         <span>Gabriel</span>
@@ -130,6 +129,5 @@ export default function SimpleAbout() {
           </ul>
         </div>
       </div>
-    </main>
   )
 }

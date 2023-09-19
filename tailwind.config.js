@@ -15,6 +15,11 @@ module.exports = {
         'whiteclear': '#f2f5ff',
         'skyblue': '#8ca9ff',
       },
+      fontFamily: {
+        'libre': ["var(--font-libre)"],
+        'poppins': ["var(--font-poppins)"],
+      },
+     
     }
   },
   plugins: [],
