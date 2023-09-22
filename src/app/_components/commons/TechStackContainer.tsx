@@ -1,7 +1,6 @@
 import TechStackContent from './TechStackContent';
 import { useState } from "react"
-import styles from '../css/TechStack.module.css'
-import ToggleCollapse from './Polygon'
+import Polygon from './Polygon'
 
 
 export default function TechStackContainer() {
@@ -13,12 +12,10 @@ export default function TechStackContainer() {
 
 
   return (
-    <>
       <p onClick={toggleCollapse} >
-        <ToggleCollapse divText="Tech Stack" isCollapsed={isCollapsed} />
+        <Polygon divText="Tech Stack" isCollapsed={isCollapsed} />
       {isCollapsed && <TechStackContent />}
       </p>
-    </>
   )
 }
 
