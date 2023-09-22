@@ -1,0 +1,28 @@
+.glassmorphism {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+}
+
+.hoverEffect:hover {
+  transform: scale(1.15);
+  margin: 0.5rem;
+}
+
+.polygon {
+    width: 1em;
+    height: 1em;
+    display: block;
+    fill: inherit;
+    flex-shrink: 0;
+    transition: transform 200ms ease-out 0s;
+    transform: rotateZ(90deg);
+    opacity: 1;
+}
+
+.rotate {
+  transform: rotateZ(180deg);
+  fill: rgb(94, 93, 93);
+}

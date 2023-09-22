@@ -21,15 +21,12 @@ export default function SimpleAbout() {
       <span className="font-bold text-3xl">
         <TypeWritter {...typewriterProps} />
       </span>
-      <div>
-        <h2 className="italic mb-2">
-          Passionate full-stack developer with a keen interest in crafting disruptive interfaces,
-          solving complex problems, and understanding the profound impact technology has on humanity,
-          particularly within the healthcare field.
-        </h2>
-        <ContactBox />
-      </div>
-      <h2>My Tech Stack</h2>
+      <h2 className="italic mb-2">
+        Passionate full-stack developer with a keen interest in crafting disruptive interfaces,
+        solving complex problems, and understanding the profound impact technology has on humanity,
+        particularly within the healthcare field.
+      </h2>
+      <ContactBox />
       <TechStackContainer />
     </>
   )
