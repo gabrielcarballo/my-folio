@@ -12,15 +12,15 @@
 }
 
 .polygon {
-    width: 1em;
-    height: 1em;
-    display: block;
-    fill: inherit;
-    flex-shrink: 0;
-    transition: transform 200ms ease-out 0s;
-    transform: rotateZ(90deg);
-    opacity: 1;
-    cursor: pointer;
+  width: 1em;
+  height: 1em;
+  display: block;
+  fill: inherit;
+  flex-shrink: 0;
+  transition: transform 200ms ease-out 0s;
+  transform: rotateZ(90deg);
+  opacity: 1;
+  cursor: pointer;
 }
 
 .rotate {

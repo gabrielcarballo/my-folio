@@ -13,8 +13,7 @@ export default function TechStackContainer() {
 
   return (
     <>
-      <p onClick={toggleCollapse}>{}</p>
-      <Polygon divText="Tech Stack" isCollapsed={isCollapsed} onClick={toggleCollapse} />
+      <Polygon divText="My Tech Stack" isCollapsed={isCollapsed} onClick={toggleCollapse} />
       {isCollapsed && <TechStackContent />}
     </>
   )
