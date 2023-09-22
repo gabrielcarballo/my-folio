@@ -1,3 +1,4 @@
+'use client'
 import TechStackContent from './TechStackContent';
 import { useState } from "react"
 import Polygon from './Polygon'
@@ -10,12 +11,12 @@ export default function TechStackContainer() {
     setIsCollapsed(!isCollapsed)
   }
 
-
   return (
-      <p onClick={toggleCollapse} >
-        <Polygon divText="Tech Stack" isCollapsed={isCollapsed} />
+    <>
+      <p onClick={toggleCollapse}>{}</p>
+      <Polygon divText="Tech Stack" isCollapsed={isCollapsed} onClick={toggleCollapse} />
       {isCollapsed && <TechStackContent />}
-      </p>
+    </>
   )
 }
 

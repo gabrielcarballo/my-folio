@@ -13,12 +13,11 @@ export default function Home() {
   return (
     <>
       <Header />
-    <main className="font-libre">
-      <SimpleAbout />
-
-    </main>
-    <footer>
-    </footer>
+      <main className="font-libre">
+        <SimpleAbout />
+      </main>
+      <footer>
+      </footer>
     </>
   )
 }
