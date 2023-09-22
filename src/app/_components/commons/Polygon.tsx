@@ -1,4 +1,4 @@
-import styles from '../css/TechStack.module.css';
+import styles from '../styles/TechStack.module.css';
 
 interface ToggleCollapseProps {
   divText: string;

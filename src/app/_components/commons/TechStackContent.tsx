@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../css/TechStack.module.css'
+import styles from '../styles/TechStack.module.css'
 
 interface Tech {
   name: string;
