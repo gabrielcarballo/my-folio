@@ -18,15 +18,19 @@ const contactBoxes: ContactBoxProps[] = [
     image: "icons8-github-48.png",
     link: "https://github.com/gabrielcarballo",
  },
+  {
+    image: "icons8-whatsapp-48.png",
+    link: "https://wa.me/34604019862",
+  }
 ];
 
 export default function ContactBox() {
   return (
     <>
       <div className="flex row">
-        {contactBoxes.map(({link, image}) => {
+        {contactBoxes.map(({link, image}, index) => {
           return (
-            <a href={link}>
+            <a key={index} href={link}>
               <img src={image} />
             </a>
           )
