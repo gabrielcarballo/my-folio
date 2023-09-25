@@ -90,7 +90,10 @@ const techStack: Tech[] = [
   },
 ];
 
+import { useState, useEffect } from 'react';
+
 export default function TechStackContent() {
+
   return (
     <table className="table-auto">
       <tbody>
@@ -98,8 +101,10 @@ export default function TechStackContent() {
           index % 5 === 0 && (
             <tr key={index}>
               {techStack.slice(index, index + 5).map((tech, index) => (
-                <td key={index}
-                  className={`p-4 text-center w-1/5 ${styles.glassmorphism} ${styles.hoverEffect}`}>
+                <td
+                  key={index}
+                  className={`p-4 text-center w-1/5 ${styles.glassmorphism} ${styles.hoverEffect} ${styles.tstack} `}
+                >
                   <div className='flex justify-center rounded-lg'>
                     <img src={tech.icon} alt={tech.name} width="40" height="40" />
                   </div>
