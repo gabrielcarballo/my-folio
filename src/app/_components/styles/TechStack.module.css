@@ -28,9 +28,6 @@
   fill: rgb(94, 93, 93);
 }
 
-/* styles.css */
-
-/* Define a fade-in animation with dynamic delay */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -44,24 +41,24 @@
 
 /* Apply the fade-in animation to your tech stack item with dynamic delay */
 .tstack {
-  animation-duration: 0.5s; /* Adjust duration as needed */
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-name: fadeIn;
 }
 
 /* Add delay based on index */
 .tstack:nth-child(5n+1) {
-  animation-delay: 0.1s; /* Delay for the first item in each row */
+  animation-delay: 0.4s; /* Delay for the first item in each row */
 }
 .tstack:nth-child(5n+2) {
-  animation-delay: 0.2s; /* Delay for the second item in each row */
+  animation-delay: 0.6s; /* Delay for the second item in each row */
 }
 .tstack:nth-child(5n+3) {
-  animation-delay: 0.3s; /* Delay for the third item in each row */
+  animation-delay: 0.8s; /* Delay for the third item in each row */
 }
 .tstack:nth-child(5n+4) {
-  animation-delay: 0.4s; /* Delay for the fourth item in each row */
+  animation-delay: 1s; /* Delay for the fourth item in each row */
 }
 .tstack:nth-child(5n+5) {
-  animation-delay: 0.5s; /* Delay for the fifth item in each row */
+  animation-delay: 1.2s; /* Delay for the fifth item in each row */
 }

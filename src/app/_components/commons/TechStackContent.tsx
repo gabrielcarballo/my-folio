@@ -93,7 +93,7 @@ const techStack: Tech[] = [
 import { useState, useEffect } from 'react';
 
 export default function TechStackContent() {
-
+const [animationDone, setAnimationDone] = useState(false)
   return (
     <table className="table-auto">
       <tbody>
@@ -103,7 +103,8 @@ export default function TechStackContent() {
               {techStack.slice(index, index + 5).map((tech, index) => (
                 <td
                   key={index}
-                  className={`p-4 text-center w-1/5 ${styles.glassmorphism} ${styles.hoverEffect} ${styles.tstack} `}
+                  className={`p-4 text-center w-1/5 ${styles.glassmorphism} ${styles.hoverEffect} ${animationDone ? '' : styles.tstack} `}
+                  onAnimationEnd={() => setTimeout(() => setAnimationDone(true), 1000)}
                 >
                   <div className='flex justify-center rounded-lg'>
                     <img src={tech.icon} alt={tech.name} width="40" height="40" />
