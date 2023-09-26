@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import SimpleAbout from "./_components/commons/SimpleAbout"
+import SimpleAbout from "./_components/SimpleAbout"
 import Header from "./_components/commons/Header"
 
 

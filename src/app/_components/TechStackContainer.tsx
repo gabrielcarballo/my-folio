@@ -1,7 +1,7 @@
 'use client'
 import TechStackContent from './TechStackContent';
 import { useState } from "react"
-import Polygon from './Polygon'
+import Polygon from './commons/Polygon'
 
 
 export default function TechStackContainer() {

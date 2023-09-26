@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/TechStack.module.css'
+import styles from '../_components/styles/TechStack.module.css'
 
 interface Tech {
   name: string;
@@ -93,7 +93,8 @@ const techStack: Tech[] = [
 import { useState, useEffect } from 'react';
 
 export default function TechStackContent() {
-const [animationDone, setAnimationDone] = useState(false)
+  const [animationDone, setAnimationDone] = useState(false)
+
   return (
     <table className="table-auto">
       <tbody>
