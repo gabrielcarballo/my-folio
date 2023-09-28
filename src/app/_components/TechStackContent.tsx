@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../_components/styles/TechStack.module.css'
+import { useState } from 'react';
 
 interface Tech {
   name: string;
@@ -90,7 +91,6 @@ const techStack: Tech[] = [
   },
 ];
 
-import { useState, useEffect } from 'react';
 
 export default function TechStackContent() {
   const [animationDone, setAnimationDone] = useState(false)
