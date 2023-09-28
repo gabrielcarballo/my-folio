@@ -3,6 +3,7 @@ import ContactBox from "@/app/contacts/components/commons/ContactBox";
 import React from "react";
 import TypeWritter, { ITypewriterProps } from 'react-ts-typewriter'
 import TechStackContainer from "./TechStackContainer";
+import Summary from './Summary';
 
 
 
@@ -28,6 +29,7 @@ export default function SimpleAbout() {
       </h2>
       <ContactBox />
       <TechStackContainer />
+      <Summary />
     </>
   )
 }
