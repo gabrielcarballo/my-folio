@@ -22,7 +22,7 @@ const summaryText = [
 
 export default function Summary() {
   return (
-    <div className='bg-black'>
+    <div>
       <p>{summaryText.map((text, index) => {
         return <p key={index}>{text}</p>
       })}</p>

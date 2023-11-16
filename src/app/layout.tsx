@@ -22,8 +22,6 @@ export const metadata: Metadata = {
   description: 'Gabriel Carballo Portfolio',
   icons: {
     icon: '/favicon-m.png',
-
-
   },
   
 }

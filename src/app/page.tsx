@@ -12,10 +12,10 @@ const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <main className="font-libre">
         <SimpleAbout />
-      </main>
+      </main> */}
       <footer>
       </footer>
     </>
