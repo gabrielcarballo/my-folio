@@ -1,6 +1,4 @@
-'use client'
-import { useState, useEffect } from 'react'
-
+import { useState } from 'react';
 
 const summaryText = [
   "My first contact with programming was creating small scripts to do repetitive stuff for online games such as Ragnarok Online when I was a kid. As I grew up, my interests improved with a few minor game modifications, some websites using WordPress, and a lot of time trying to learn C all by myself.",
@@ -13,19 +11,24 @@ const summaryText = [
   "Back to studying JavaScript for almost a year in my free time as a hobby, hoping to be enough to suppress the urge to back to the IT world, I embarked on another entrepreneurial adventure called Eu!SóQueMelhor - \"You, only better\" in English - focused on business and team management. The very first month we got a full-time contract to remake the infrastructure of a group in the Restaurant and Events field with a 12M/y profit that was more than halved by COVID. I am proud enough to say not only did we hold back the 12M result within 5 months(with 3 of them still on lockdown) but we also increased profit to more than 15M billing and increased markup by 35%. Even if we were proud of our work and sweat, the group owner did not see it that way, deceiving and creating several difficulties in paying us for our year of work. Instead of fighting for our clear rights, I have faced it as an opportunity or a signal that I should follow my original goal, my original dream.",
   "So I doubled the amount of time studying JavaScript and began revisiting fundamentals of Object-Oriented Programming and Data Structures as well as universities, fellowships and potentials opportunities that could help me realize my dream of making people's lives easier through technology.",
   "Meanwhile the programming studies and the quest for universities that could offer me what the Brazilian ones could not, I was approved at an EdTech named Trybe which is a startup that follows a boot camp strategy to prepare students to become, in a year, Junior Web Devs. I believe it would become a nice opportunity to learn, get even more experience, and above all, shorten my path to my next step, an excellent university.",
-  "Since I started it in 2022.2, I'm now able to help companies with my enthusiasm, eagerness to learn, business knowledge - especially the fails - and now with my Fullstack abilities having practical and theoretical experience with JavaScript, Typescript, and Python through a large amount of both front and backend frameworks and libraries such as React, Next.JS, Redux, Jest and React Testing Library, Node.js, Tailwind CSS, Django, Express, MongoGB, MySQL, ORM's like Sequelize and Prisma, Docker and Docker-Compose for structure and more, encompassing a wide array of both front-end and back-end frameworks and libraries.",
+  "Since I started it in 2022.2, I'm now able to help companies with my enthusiasm, eagerness to learn, business knowledge - especially the fails - and now with my Fullstack abilities having practical and theoretical experience with JavaScript, Typescript, and Python through a large amount of both front and backend frameworks and libraries such as React, Next.JS, Redux, Jest and React Testing Library, Node.js, Tailwind CSS, Django, Express, MongoDB, MySQL, ORM's like Sequelize and Prisma, Docker and Docker-Compose for structure and more, encompassing a wide array of both front-end and back-end frameworks and libraries.",
   "Not to mention my absolute passion for learning and understanding the new and undiscovered. I am ready to face any challenge and learn whatever is necessary to overcome it.",
   "That is a shorthand of a period of my life! If you want to take a virtual - or even a real one - coffee with me, know a bit more, or even chat about something we both like, feel free to contact me and I will be more than happy to respond."
 ];
 
-
-
 export default function Summary() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div className='bg-black'>
-      <p>{summaryText.map((text, index) => {
-        return <p key={index}>{text}</p>
-      })}</p>
+      <p className={`line-clamp-${isExpanded ? 'none' : '[4]'} transition-all duration-500 ease-in-out`}>{summaryText}</p>
+      <button onClick={toggleExpand} className="text-white mt-2">
+        {isExpanded ? 'Show Less' : 'Know More'}
+      </button>
     </div>
   );
 }
